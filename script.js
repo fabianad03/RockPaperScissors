@@ -46,13 +46,13 @@ optionImages.forEach((image, index) => {
       // Create an object with all possible outcomes
       let outcomes = {
         RR: "Draw",
-        RP: "Cpu",
+        RP: "Computer",
         RS: "User",
         PP: "Draw",
         PR: "User",
-        PS: "Cpu",
+        PS: "Computer",
         SS: "Draw",
-        SR: "Cpu",
+        SR: "Computer",
         SP: "User",
       };
 
@@ -60,7 +60,7 @@ optionImages.forEach((image, index) => {
       let outComeValue = outcomes[userValue + cpuValue];
 
       // Display the result
-      result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!!`;
+      result.textContent = userValue === cpuValue ? "Draw!" : `${outComeValue} Won!`;
     }, 2500);
   });
 });
